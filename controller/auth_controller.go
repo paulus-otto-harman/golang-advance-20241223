@@ -6,8 +6,6 @@ import (
 
 	//"20241223/model"
 	"github.com/gin-gonic/gin"
-	"gorm.io/gorm"
-
 	//"gorm.io/gorm"
 	"net/http"
 )
@@ -16,7 +14,7 @@ type AuthController struct {
 	//repo repository.AuthRepository
 }
 
-func NewAuthController(db *gorm.DB) *AuthController {
+func NewAuthController() *AuthController {
 	//return &AuthController{repo: repository.NewAuthRepository(db)}
 	return &AuthController{}
 }

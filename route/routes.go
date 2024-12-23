@@ -3,11 +3,11 @@ package route
 import (
 	"20241223/controller"
 	"github.com/gin-gonic/gin"
-	"gorm.io/gorm"
+	//"gorm.io/gorm"
 )
 
-func AuthRoutes(router *gin.Engine, db *gorm.DB) {
-	authController := controller.NewAuthController(db)
+func AuthRoutes(router *gin.Engine) {
+	authController := controller.NewAuthController()
 
 	authRoutes := router.Group("/")
 	{
